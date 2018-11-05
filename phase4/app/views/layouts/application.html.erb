@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GCPD Tracking System</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  </head>
+
+  <body>
+    <main>
+
+          <!-- MAIN CONTENT OF TEMPLATE GOES HERE -->
+          <%= yield %>
+
+    </main>
+    
+    <%= javascript_include_tag 'application' %>   
+  </body>
+</html>
+
