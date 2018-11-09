@@ -4,6 +4,12 @@ class Investigation < ApplicationRecord
   belongs_to :crime
   has_many :assignments
   has_many :officers, through: :assignments
+  has_many :crimes, through: :crime_investigations 
+  has_many :crime_investigations
+  has_many :criminals, through: :suspects 
+  has_many :suspects
+  has_many :investigation_notes 
+
 
   # Scopes
   scope :is_open, -> { where(date_closed: nil) }

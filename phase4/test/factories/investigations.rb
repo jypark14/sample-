@@ -1,6 +1,5 @@
 FactoryBot.define do
   factory :investigation do
-    association :crime
     title "Lacey Towers Murder"
     description "Tiffany Ambrose was murdered in Lacey Towers. Ms. Ambrose was known to be one of Roman Sionis' girlfriends. Long list of priors, but unclear if she was the primary target here or the other unidentified male found dead with her."
     crime_location "Lacey Towers"

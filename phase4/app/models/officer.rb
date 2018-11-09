@@ -2,7 +2,10 @@ class Officer < ApplicationRecord
 
   # Relationships
   belongs_to :unit
+  belongs_to :user 
   has_many :assignments
+  has_many :investigations_notes 
+
   has_many :investigations, through: :assignments
 
   # Scopes

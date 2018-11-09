@@ -1,7 +1,9 @@
 class Crime < ApplicationRecord
 
   # Relationships
-  has_many :investigations
+  has_many :investigations, through: :crime_investigations
+  has_many :crime_investigations
+
 
   # Scopes
   scope :alphabetical, -> { order(:name) }
